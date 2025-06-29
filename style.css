@@ -106,12 +106,17 @@ section {
     scale: 1.2;
 }
 
-@media (max-width:770px) {
-    
+@media (max-width:770px) { 
     section {
         scale: .9;
     }
+}
 
+
+@media (max-width:425px) { 
+    section {
+        scale: .8;
+    }
 }
 
 .floating{
