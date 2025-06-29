@@ -17,8 +17,7 @@
             <img src="logo.png" alt="">
         </a>
 
-        <i id="menu-bar" class="fas fa-bars"></i>
-        <i class="fa-solid fa-bars"></i>
+        <i id="menu-bar" class="fa-solid fa-bars"></i>
 
         <nav class="navbar">
             <a href="#feature">features</a>
@@ -106,6 +105,21 @@
     <footer>
         <h2 class="credit">Created with 🧡 by <a href="mailto:krishna636471@gmail.com" title="krishna636471@gmail.com">Hariom Singh </a>@2025</h2>
     </footer>
+
+    <script>
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+
+        menu.addEventListener('click', ()=>{
+            menu.classList.toggle('fa-times')
+            navbar.classList.toggle('nav-toggle')
+        });
+
+        window.onscroll = () =>{
+            menu.classList.remove('fa-times')
+            navbar.classList.remove('nav-toggle')
+        }
+    </script>
 
 </body>
 </html>
